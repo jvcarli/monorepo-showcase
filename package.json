@@ -1,0 +1,14 @@
+{
+  "name": "monorepo-showcase",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "description": "monorepo showcase",
+  "scripts": {
+    "test": "echo \"error: no test specified\" && exit 1"
+  },
+  "author": "João Vítor Carli Pereira",
+  "license": "gpl-3.0-or-later"
+}
