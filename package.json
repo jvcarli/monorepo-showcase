@@ -7,7 +7,10 @@
   ],
   "description": "monorepo showcase",
   "scripts": {
-    "test": "echo \"error: no test specified\" && exit 1"
+    "test:web-client": "echo \"error: no test specified\" && exit 1",
+    "dev:web-client": "npm run dev --workspace @company/web-client",
+    "build:web-client": "npm run build --workspace @company/web-client",
+    "start:web-client": "npm run start --workspace @company/web-client"
   },
   "author": "João Vítor Carli Pereira",
   "license": "gpl-3.0-or-later"
