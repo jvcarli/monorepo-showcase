@@ -1,0 +1,32 @@
+services:
+  web-client:
+    build:
+      context: .
+      dockerfile: ./apps/web-client/Dockerfile
+    container_name: web-client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web-client:/app
+      - node_modules:/app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    profiles:
+      - dev
+
+  web-client-prod:
+    build:
+      context: .
+      dockerfile: ./apps/web-client/Dockerfile
+    container_name: web-client_prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    command: npm run build
+    profiles:
+      - prod
+
+volumes:
+  node_modules:
