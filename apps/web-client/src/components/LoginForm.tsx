@@ -17,14 +17,14 @@ export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email === fakeUser.email && password === fakeUser.password) {
-      router.push("/wallpaper-creator");
+      router.push("/audio-analyzer");
     } else {
       setError("Invalid email or password");
     }
   };
 
   return (
-    <div className="mx-auto mt-20 max-w-sm rounded border bg-white p-6 shadow">
+    <div className="mx-auto mt-20 max-w-sm rounded border border-gray-700 bg-white p-6 shadow">
       <h1 className="mb-4 text-2xl font-bold">Login</h1>
       {error && <p className="mb-4 text-red-500">{error}</p>}
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
@@ -33,7 +33,7 @@ export default function LoginForm() {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="rounded border p-2"
+          className="rounded border border-gray-700 p-2"
           required
         />
         <input
@@ -41,12 +41,12 @@ export default function LoginForm() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="rounded border p-2"
+          className="rounded border border-gray-700 p-2"
           required
         />
         <button
           type="submit"
-          className="rounded bg-blue-600 py-2 text-white hover:bg-blue-700"
+          className="rounded bg-orange-500 py-2 text-white hover:bg-orange-500"
         >
           Login
         </button>
