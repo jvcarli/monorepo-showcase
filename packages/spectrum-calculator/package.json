@@ -6,7 +6,8 @@
   "author": "João Vítor Carli Pereira",
   "license": "gpl-3.0-or-later",
   "description": "",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "fft.js": "^4.0.4"
+  },
   "private": true
 }
