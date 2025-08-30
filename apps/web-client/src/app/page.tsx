@@ -1,5 +1,4 @@
-"use client";
-
+import type { Metadata } from "next";
 import LoginForm from "@/components/LoginForm";
 
 export default function HomePage() {
@@ -15,3 +14,8 @@ export default function HomePage() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Monorepo Showcase",
+  description: "Showcase of a simple web app",
+};
