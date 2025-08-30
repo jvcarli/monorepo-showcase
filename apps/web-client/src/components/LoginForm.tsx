@@ -24,16 +24,16 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-20 p-6 border rounded shadow bg-white">
-      <h1 className="text-2xl font-bold mb-4">Login</h1>
-      {error && <p className="text-red-500 mb-4">{error}</p>}
+    <div className="mx-auto mt-20 max-w-sm rounded border bg-white p-6 shadow">
+      <h1 className="mb-4 text-2xl font-bold">Login</h1>
+      {error && <p className="mb-4 text-red-500">{error}</p>}
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="border p-2 rounded"
+          className="rounded border p-2"
           required
         />
         <input
@@ -41,12 +41,12 @@ export default function LoginForm() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border p-2 rounded"
+          className="rounded border p-2"
           required
         />
         <button
           type="submit"
-          className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          className="rounded bg-blue-600 py-2 text-white hover:bg-blue-700"
         >
           Login
         </button>

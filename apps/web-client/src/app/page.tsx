@@ -4,12 +4,12 @@ import LoginForm from "../components/LoginForm";
 
 export default function HomePage() {
   return (
-    <div className="h-screen flex">
+    <div className="flex h-screen">
       {/* Left panel */}
-      <div className="flex-1 bg-gray-200 flex"></div>
+      <div className="hidden bg-gray-200 xl:flex xl:flex-1"></div>
 
       {/* Right panel */}
-      <div className="flex-1 bg-white flex items-center justify-center">
+      <div className="flex flex-1 items-center justify-center bg-white">
         <LoginForm />
       </div>
     </div>
