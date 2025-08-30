@@ -1,5 +1,7 @@
 # syntax=docker.io/docker/dockerfile:1
 
+# NOTE: currently this Dockerfile is only used for development!
+
 FROM node:22-alpine
 
 WORKDIR /app
