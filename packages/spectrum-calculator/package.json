@@ -1,0 +1,12 @@
+{
+  "name": "@company/spectrum-calculator",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "type": "module",
+  "author": "João Vítor Carli Pereira",
+  "license": "gpl-3.0-or-later",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "private": true
+}
